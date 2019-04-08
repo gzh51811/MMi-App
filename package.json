@@ -4,6 +4,11 @@
   "private": true,
   "dependencies": {
     "antd": "^3.16.1",
+    "antd-mobile": "^2.2.11",
+    "axios": "^0.18.0",
+    "babel-plugin-import": "^1.11.0",
+    "bee-mobile": "^0.4.3",
+    "node-sass": "^4.11.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
@@ -23,5 +28,19 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "babel": {
+    "presets": [
+      "react-app"
+    ],
+    "plugins": [
+      [
+        "import",
+        {
+          "libraryName": "antd",
+          "style": "css"
+        }
+      ]
+    ]
+  }
 }
