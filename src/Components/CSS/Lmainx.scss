@@ -1,0 +1,67 @@
+
+#Lmainx{
+    width: 8.933333rem;
+    height: auto;
+    margin: 0 0.533333rem;
+    .yanzh1{
+        width: 100%;
+        border-bottom: 1px solid #d3d3d3;
+        input{
+            border: none;
+            box-sizing: border-box;
+            width: 7.053333rem;
+            height: 1.06rem;
+            font-size: 18px;
+            font-weight: 520;
+            padding-left: 2px;
+        }
+    }
+    .yanzh2{
+        width: 100%;
+        border-bottom: 1px solid #d3d3d3;
+        input{
+            border: none;
+            box-sizing: border-box;
+            width: 93%;
+            height: 1.4rem;
+            font-size: 17px;
+            font-weight: 520;
+            padding-left: 2px;
+        }
+    }
+    .btn1{
+        .ant-btn-primary {
+            display: inline-block;
+            color: #fff;
+            background-color: #ff6700;
+            border-color: #ff6700;
+            margin: 0.64rem 0;
+            height: 1.173333rem;
+            font-size: 18px;
+            border-radius: 6px;
+        }
+    }
+    .btn2{
+        .ant-btn {
+            display: inline-block;
+            height: 1.173333rem;
+            font-size: 18px;
+            border-radius: 6px;
+            color: rgb(20, 20, 20);
+            margin-top: -10px;
+        }
+    }
+    .dianji2{
+        color: #9b9b9b;
+        font-size: 16px;
+        text-align: center;
+        margin-top: 12px;
+        span{
+            padding: 0 10px;
+            cursor: pointer;
+            &:nth-child(1){
+                border-right: 1px solid rgb(65, 63, 63);
+            }
+        }
+    }
+}

@@ -14,9 +14,6 @@ class HTotop extends Component{
         }
     }
 
-   
-    
-
     render(){
         return (
             <div id="HTotop">

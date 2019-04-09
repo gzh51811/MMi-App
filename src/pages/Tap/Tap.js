@@ -16,11 +16,17 @@ class Tap extends Component {
         }
     }
 
+    // 点击返回首页
+    GoList(){
+        let {history} = this.props;
+        history.push('/home');
+    }
+
     render(){
         return (
             <div id="Tap">
                 <header className="Tap-header">
-                    <span className="Header-span Header-span1"><Icon type="left"/></span>
+                    <span className="Header-span Header-span1" onClick={this.GoList.bind(this)}><Icon type="left"/></span>
                     <span className="Header-span Header-span2">分类</span>
                     <span className="Header-span Header-span3"><Icon type="search"/></span>
                 </header>

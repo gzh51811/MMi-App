@@ -1,0 +1,28 @@
+
+#Llink{
+    width: 8.933333rem;
+    margin-left: .533333rem;
+    margin-top: 1.8rem;
+    text-align: center;
+    .Hfang-div1{
+        border-top: 1px solid #f2f2f2;
+        position: relative;
+        span{
+            position: absolute;
+            top: -14px;
+            left: 126px;
+            display: inline-block;
+            padding: 6px 10px;
+            background: #fff;
+            color: #b0b0b0;
+        }
+    }
+    .Hfang-div2{
+        overflow: hidden;
+        margin-top: .6rem;
+        .div-sp{
+            display: inline-block;
+            margin: 0 6px;
+        }
+    }
+}

@@ -7,6 +7,9 @@ import Tap from './pages/Tap/Tap.js';
 import Find from './pages/Find/Find.js';
 import Cart from './pages/Cart/Cart.js';
 import Mine from './pages/Mine/Mine.js';
+import Login from './pages/Login/Login.js';
+import Loginx from './pages/Login/Loginx.js';
+import Lzhuce from './pages/Login/Lzhuce.js';
 
 // 引入rem
 import './rem';
@@ -67,6 +70,9 @@ class App extends Component{
                 <Route path='/find' component={Find}/>
                 <Route path='/cart' component={Cart}/>
                 <Route path='/mine' component={Mine}/>
+                <Route path='/login' component={Login}/>
+                <Route path='/loginx' component={Loginx}/>
+                <Route path='/lzhuce' component={Lzhuce}/>
                 <Redirect from="/" to="/home" />
             </Switch>
             <div className="footer">
