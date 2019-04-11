@@ -75,10 +75,10 @@ class DetailTop extends Component {
     }
     render() {
         return (
-            <div className="DetailTop">
+            <div>
                     {
                         this.state.details.map(goods=>
-                            <div  key={goods.item_id}>
+                            <div className="DetailTop"  key={goods.item_id}>
                                 <Carousel afterChange={this.onChange} key={goods.item_id}>
                                     <div className="lunbotu"><h3 className="lunbotu"><img className="lunbotu dtimg" alt="" src={goods.url1}/></h3></div>
                                     <div className="lunbotu"><h3 className="lunbotu"><img alt="" className="lunbotu dtimg" src={goods.url2}/></h3></div>

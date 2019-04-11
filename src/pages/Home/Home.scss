@@ -14,6 +14,11 @@ html,body{
         background: #f2f2f2;
         display: flex;
         vertical-align: middle;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-bottom: 1.173333rem;
+        z-index: 100;
         .sp{
             flex: 1.5;
             text-align: center;
@@ -30,7 +35,8 @@ html,body{
     }
     .Home2{
         width: 100%;
-        overflow: auto;
+        height: auto;
+        overflow: hidden;
         flex: 1;
     }
 }

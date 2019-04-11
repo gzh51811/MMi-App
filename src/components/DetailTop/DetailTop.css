@@ -1,61 +1,61 @@
-.ant-carousel .slick-slide {
+
+.DetailTop .ant-carousel .slick-slide {
     text-align: center;
     height: 12.133333rem;
     line-height:12.133333rem;
     overflow: hidden;
-  }
-  
-  .ant-carousel .slick-slide h3 {
+}
+.DetailTop .ant-carousel .slick-slide h3 {
     color: #fff;
-  }
-  .lunbotu{
-      width: 11.04rem;
-      height: 12.133333rem;
-      text-align: center;
-  }
-  .dtimg{
-      display: inline-block;
-      width: 100%;
-      height: 100%;
-  }
-  .detail{
-      width:9rem;
-      margin: auto;
-      margin-top: .533333rem;
-  }
-  .detailTitle{
-      font-size: .533333rem;
-  }
-  .detailPrice{
+}
+.lunbotu{
+    width: 11.04rem;
+    height: 12.133333rem;
+    text-align: center;
+}
+.dtimg{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.detail{
+    width:9rem;
+    margin: auto;
+    margin-top: .533333rem;
+}
+.detailTitle{
+    font-size: .533333rem;
+}
+.detailPrice{
     font-size: .533333rem;
     color: orangered;
     font-weight: bolder;
-  }
-  .DetailTop{
-      position: relative;
-  }
-  .Topicon{
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 1;
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-  }
-  .iconstyle{
-      width: .8rem;
-      height:.8rem;
-      text-align: center;
-      line-height: .8rem;
-      border-radius: 50%;
-      background: #cccccc;
-  }
-  .iconleft{
-      margin-left: .533333rem;
-      margin-top: .266667rem;
-  }
-  .iconshare{
+}
+.DetailTop{
+    position: relative;
+}
+.Topicon{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.iconstyle{
+    width: .8rem;
+    height:.8rem;
+    text-align: center;
+    line-height: .8rem;
+    border-radius: 50%;
+    background: #cccccc;
+}
+.iconleft{
+    margin-left: .533333rem;
+    margin-top: .266667rem;
+}
+.iconshare{
     margin-right: .533333rem;
     margin-top: .266667rem;
 }
