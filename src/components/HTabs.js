@@ -1,6 +1,6 @@
 
 // 首页Tabs组件
-// import './CSS/HTabs.scss';
+import './CSS/HTabs.scss';
 
 import React,{Component} from 'react';
 
@@ -61,13 +61,12 @@ class HTabs extends Component {
                 },
             ]
         }
-
     }
 
     render(){
         let arr = ['bijiben','dianshi','zhineng','shouji'];
         return (
-            <div>
+            <div className="Tab">
                 <Tabs defaultActiveKey="0" className="Tabs">
                     {
                         this.state.Ntabs.map((item,idx)=>
@@ -82,7 +81,6 @@ class HTabs extends Component {
                                     :
                                     <Hshowt data={item.type} data1={item.color}/>
                             }
-                                
                             </TabPane>
                         )
                     }

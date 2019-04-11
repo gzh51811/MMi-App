@@ -39,9 +39,9 @@ class Hshowf extends Component{
                         homegoods.map((item)=>
                             <li className="HomeLi" key={item.item_id}>
                                 <img className="HomeLi-img" src={item.imgurl} alt=""/>
-                                <p className="HomeLi-p1">{item.name}</p>
-                                <p className="HomeLi-p2">{item.title}</p>
-                                <p className="HomeLi-p3">
+                                <p className="HomeLi-p1" style={{width:'4.266667rem'}}>{item.name}</p>
+                                <p className="HomeLi-p2" style={{width:'4.266667rem'}}>{item.title}</p>
+                                <p className="HomeLi-p3" style={{width:'4.266667rem'}}>
                                     <span className="p-span1">￥2999</span>
                                     <span className="p-span2">&nbsp;&nbsp;<del>￥3288</del></span>
                                 </p>

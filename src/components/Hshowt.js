@@ -47,20 +47,21 @@ class Hshowt extends Component{
 
     render(){
         let {homegoods} = this.state;
-        // let color = this.props.data1;
-        // let type = this.props.data;
+        let color = this.props.data1;
+        let type = this.props.data;
+        // console.log(color,type);
     
         return (
             <div id="Hshowt" style={{'position':'relative', 'top':'-5px', 'left':0}}>
                 <ul className="HshowtUL">
                 {
                     homegoods.map((item)=>
-                        <li className="HshowtLi" style={{'backgroundColor':'yellow'}} key={item.item_id}>
+                        <li className="HshowtLi" style={{backgroundColor:{color}}} key={item.item_id}>
                             <img className="HshowtLi-img" src={item.imgurl} alt=""/>
                             <div className="HshowtLi-div">
-                                <p className="Hdiv-p">{item.name}</p>
-                                <p className="Hdiv-p">{item.title}</p>
-                                <p className="Hdiv-p">￥{item.taocan[0].price}</p>
+                                <p className="Hdiv-p" style={{width:'4rem'}}>{item.name}</p>
+                                <p className="Hdiv-p" style={{width:'4rem'}}>{item.title}</p>
+                                <p className="Hdiv-p" style={{width:'4rem'}}>￥{item.taocan[0].price}</p>
                                 <span className="Hdiv-btn">立即购买</span>
                             </div>
                         </li>
