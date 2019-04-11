@@ -27,9 +27,8 @@ class ZCmain extends Component {
             let {data} = await axios.post('/zhuce',{
                 uname : shoujih
             })
-            console.log(data);
+        
             if(data === 'ok'){
-                console.log('ok')
                 confirm({
                     title: '注册成功',
                     content: '恭喜您！注册成功，直接去登录吧',
@@ -41,8 +40,8 @@ class ZCmain extends Component {
                     },
                     onCancel() {},
                   });
+                  
             }else if(data === 'no'){
-                console.log('no')
                 confirm({
                     title: '消息提示',
                     content: '该手机号已经注册过了噢！请直接去登录吧',

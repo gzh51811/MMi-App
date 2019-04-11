@@ -81,7 +81,7 @@ class Lmain extends Component {
         let yzm = this.refs.yzm.value;
 
         if(userphone && yzm){
-            if(yzm == Yannum){
+            if(yzm === Yannum){
                 history.push('/home');
                 localStorage.setItem('username',userphone);
                 localStorage.setItem('token',_token);

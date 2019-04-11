@@ -108,9 +108,9 @@ class DetailTop extends Component {
                                 <span>购物车</span>
                             </div>
                         </div>
-                                    <div className="addcart" onClick={this.addtoCart}>
-                                        加入购物车
-                                    </div>
+                        <div className="addcart" onClick={this.addtoCart}>
+                            加入购物车
+                        </div>
                     </div>
             </div>
         )

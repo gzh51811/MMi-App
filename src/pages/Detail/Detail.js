@@ -1,9 +1,9 @@
 import React,{Component} from 'react';
-import DetailTop from '../../components/DetailTop/DetailTop.js';
+import DetailTop from '../../Components/DetailTop/DetailTop';
 import './Detail.css'
-import Detailassets from '../../components/Detailassets/Detailassets.js';
-import DetailTap from '../../components/DetailTap/DetailTap.js';
-import GuessLike from '../../components/GuessLike/GuessLike.js';
+import Detailassets from '../../Components/Detailassets/Detailassets';
+import DetailTap from '../../Components/DetailTap/DetailTap';
+import GuessLike from '../../Components/GuessLike/GuessLike';
 
 
 class Detail extends Component {

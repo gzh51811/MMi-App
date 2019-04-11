@@ -1,6 +1,6 @@
 
 // 首页Tabs组件
-import './CSS/HTabs.scss';
+// import './CSS/HTabs.scss';
 
 import React,{Component} from 'react';
 

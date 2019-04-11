@@ -47,14 +47,14 @@ class Hshowt extends Component{
 
     render(){
         let {homegoods} = this.state;
-        let color = this.props.data1;
-        let type = this.props.data;
+        // let color = this.props.data1;
+        // let type = this.props.data;
     
         return (
             <div id="Hshowt" style={{'position':'relative', 'top':'-5px', 'left':0}}>
                 <ul className="HshowtUL">
                 {
-                    homegoods.map((item,idx)=>
+                    homegoods.map((item)=>
                         <li className="HshowtLi" style={{'backgroundColor':'yellow'}} key={item.item_id}>
                             <img className="HshowtLi-img" src={item.imgurl} alt=""/>
                             <div className="HshowtLi-div">

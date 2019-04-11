@@ -9,7 +9,7 @@ import React,{Component} from 'react';
 import TapsImg from './TapsImg';
 import TapShow from './TapShow';
 
-import { Tabs, Radio } from 'antd';
+import { Tabs } from 'antd';
 const TabPane = Tabs.TabPane;
 
 class Ttaps extends Component {

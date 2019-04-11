@@ -28,7 +28,6 @@ class CartMain extends Component {
                 username: username
             }
         })
-        console.log("map", data);
         this.setState({
             cartlist: data
         });
@@ -42,7 +41,6 @@ class CartMain extends Component {
     
     //数量增减
     async addORdel(item_id, username, value) {
-        console.log('value', value, item_id, username);
         let { axios } = this.props;
         await axios.get('/changeNum', {
             params: {
@@ -51,16 +49,11 @@ class CartMain extends Component {
                 item_qty: value
             }
         }).then(data => {
-            console.log("1", data)
-            console.log("增减", data, data.data[0].item_qty, data.data[0].item_id)
+            // console.log("增减", data, data.data[0].item_qty, data.data[0].item_id)
             let cartlist = this.state.cartlist;
             for (var i = 0; i < cartlist.length; i++) {
-                // console.log(cartlist[i].item_id)
                    if(cartlist[i].item_id=== data.data[0].item_id){
-                    //    console.log(111)
-                   
                        cartlist[i].item_qty=data.data[0].item_qty
-                    //    console.log( cartlist)
                        this.setState({
                         cartlist:cartlist
                     })
@@ -74,7 +67,7 @@ class CartMain extends Component {
     onChange(item_price, item_qty, e) {
         if(e.target.checked){
 
-            console.log(`checked = ${e.target.checked}`, item_price, item_qty,`${e.target.checked}`)
+            // console.log(`checked = ${e.target.checked}`, item_price, item_qty,`${e.target.checked}`)
             let total = item_price*item_qty;
             // console.log(total)
             (this.state.totalpri).push(total)
@@ -98,9 +91,9 @@ class CartMain extends Component {
             for(var j =0;j<this.state.deltotal.length;j++){
                 del +=this.state.deltotal[j]
             }
-            console.log("2",del);
+            // console.log("2",del);
             all = all-del;
-            console.log("2",all);
+            // console.log("2",all);
             this.setState({
                 all:all
             })
@@ -131,9 +124,9 @@ class CartMain extends Component {
             for(var j =0;j<this.state.delete.length;j++){
                 del +=this.state.delete[j]
             }
-            console.log("2",del);
+            // console.log("2",del);
             all = all-del;
-            console.log("2",all);
+            // console.log("2",all);
             this.setState({
                 all:all
             })

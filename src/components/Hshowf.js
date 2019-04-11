@@ -36,7 +36,7 @@ class Hshowf extends Component{
             <div id="Hshowf" style={{'position':'relative', 'top':'-5px', 'left':0}}>
                 <ul className="HomeUL">
                     {
-                        homegoods.map((item,idx)=>
+                        homegoods.map((item)=>
                             <li className="HomeLi" key={item.item_id}>
                                 <img className="HomeLi-img" src={item.imgurl} alt=""/>
                                 <p className="HomeLi-p1">{item.name}</p>

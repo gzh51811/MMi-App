@@ -7,12 +7,12 @@ import 'antd/dist/antd.css';
 import Home from './pages/Home/Home.js';
 import Tap from './pages/Tap/Tap.js';
 import Find from './pages/Find/Find.js';
-import Cart from './pages/Cart/Cart.js';
+import Cart from './pages/Cart/Cart';
 import Mine from './pages/Mine/Mine.js';
 import Detail from './pages/Detail/Detail.js';
 
 //列表页
-import List from './pages/List/List'
+import List from './pages/List/List';
 import Login from './pages/Login/Login.js';
 import Loginx from './pages/Login/Loginx.js';
 import Lzhuce from './pages/Login/Lzhuce.js';
@@ -95,6 +95,9 @@ class App extends Component{
                 <Route path='/mine' component={Mine}/>
                 <Route path='/list' component={List}/>
                 <Route path='/detail' component={Detail}/>
+                <Route path='/Login' component={Login}/>
+                <Route path='/Lzhuce' component={Lzhuce}/>
+                <Route path='/Loginx' component={Loginx}/>
                 <Redirect from="/" to="/home" />
             </Switch>
         </div>

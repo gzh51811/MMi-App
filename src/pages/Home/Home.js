@@ -21,23 +21,23 @@ class Home extends Component{
         this.GoMine = this.GoMine.bind(this);
     }
 
-    componentDidMount(){
-        // 监听滚轮事件
-        window.onscroll = function(){
-            var Tscroll = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+    // componentDidMount(){
+    //     // 监听滚轮事件
+    //     window.onscroll = function(){
+    //         var Tscroll = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
             
-            // 回到顶部
-            var sTop = this.refs.toTop;
-            if(sTop){
-                if(Tscroll > 500){
-                    sTop.style.opacity = 1;
-                }else{
-                    sTop.style.opacity = 0;
-                }
-            }
-        }
+    //         // 回到顶部
+    //         var sTop = this.refs.toTop;
+    //         if(sTop){
+    //             if(Tscroll > 500){
+    //                 sTop.style.opacity = 1;
+    //             }else{
+    //                 sTop.style.opacity = 0;
+    //             }
+    //         }
+    //     }
         
-    }
+    // }
 
 
     // 点击跳转到我的

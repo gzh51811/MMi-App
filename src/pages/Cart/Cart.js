@@ -1,6 +1,6 @@
 import React from 'react';
-import Likes from '../../components/Likes/Likes';
-import CartMain from '../../components/CartMain/CartMain';
+import Likes from '../../Components/Likes/Likes';
+import CartMain from '../../Components/CartMain/CartMain';
 
 
 function Cart(){
