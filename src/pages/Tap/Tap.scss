@@ -1,0 +1,38 @@
+
+*{padding: 0; margin: 0;}
+html,body{height: 100%;}
+
+#Tap{
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .Tap-header{
+        height: 1.333333rem;
+        width: 100%;
+        background: #f2f2f2;
+        .Header-span{
+            display: inline-block;
+            line-height: 1.333333rem;
+            text-align: center;
+        }
+        .Header-span1{
+            width: 15%;
+            font-size: 20px;
+        }
+        .Header-span2{
+            width: 70%;
+            font-size: 18px;
+        }
+        .Header-span3{
+            width: 15%;
+            font-size: 20px;
+        }
+    }
+    .Tap-div{
+        width: 100%;
+        overflow: auto;
+        flex: 1;
+    }
+}

@@ -1,0 +1,27 @@
+
+#HTotop{
+    width: .972rem;
+    position: fixed;
+    right: .32rem;
+    bottom: 2rem;
+    z-index: 100;
+    .app{
+        width: .972rem;
+        height: .972rem;
+    }
+    .top{
+        width: .972rem;
+        height: .972rem;
+        border: 1px solid rgb(230, 228, 228);
+        border-radius: 50%;
+        background-color: #fff;
+        margin-top: 5px;
+        text-align: center;
+        .icon{
+            font-size: .533333rem;
+            line-height: .972rem;
+            color: #acacac;
+        }
+    }
+}
+

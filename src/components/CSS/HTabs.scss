@@ -1,0 +1,27 @@
+
+.Tabs{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: hidden;
+    .TabPane{
+        margin-bottom: 1.6rem;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+    }
+    .ant-tabs-top-bar{
+        margin: 0!important;
+        position: fixed;
+        top: 1.173333rem;
+        left: 0;
+        z-index: 100;
+        background: #fff;
+    }
+    .ant-tabs-tab{
+        margin: 0!important;
+        padding: .32rem!important;
+    }
+}
+

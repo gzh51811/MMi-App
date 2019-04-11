@@ -1,0 +1,48 @@
+
+*{padding: 0; margin: 0;}
+#Hshowf{
+    width: 100%;
+    height: auto;
+    overflow: scroll;
+    .HomeUL{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .HomeLi{
+            width: 49.3%;
+            float: left;
+            .HomeLi-img{
+                width: 5rem;
+                height: 5rem;
+            }
+            .HomeLi-p1{
+                margin: 10px 0.373333rem 0 0.373333rem;
+                font-size: .426667rem;
+                color: rgba(0,0,0,.87);
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .HomeLi-p2{
+                margin: 0 0.373333rem;
+                font-size: .346667rem;
+                color: rgba(0,0,0,.54);
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .HomeLi-p3{
+                margin: 0 0.373333rem 12px 0.373333rem;
+                .p-span1{
+                    font-size: 16px;
+                    color: #ea625b;
+                }
+                .p-span2{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

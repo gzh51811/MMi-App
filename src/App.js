@@ -13,6 +13,13 @@ import Detail from './pages/Detail/Detail.js';
 
 //列表页
 import List from './pages/List/List'
+import Login from './pages/Login/Login.js';
+import Loginx from './pages/Login/Loginx.js';
+import Lzhuce from './pages/Login/Lzhuce.js';
+
+// 引入rem
+import './rem';
+import 'antd/dist/antd.css';
 
 import "./App.css";
 
@@ -54,14 +61,10 @@ class App extends Component{
     }
 
     handleClick = (path,idx,e) =>{
-        // console.log(path)
-        // console.log(idx)
         this.props.history.push(path);
         this.setState({
             bool:idx
-
         })
-        console.log(this.state.bool)
       }
 
    render(){
@@ -85,15 +88,15 @@ class App extends Component{
                 </ul>
             </div>
             <Switch>
-                    <Route path='/home' component={Home}/>
-                    <Route path='/tap' component={Tap}/>
-                    <Route path='/find' component={Find}/>
-                    <Route path='/cart' component={Cart}/>
-                    <Route path='/mine' component={Mine}/>
-                    <Route path='/list' component={List}/>
-                    <Route path='/detail' component={Detail}/>
-                    <Redirect from="/" to="/home" />
-                </Switch>
+                <Route path='/home' component={Home}/>
+                <Route path='/tap' component={Tap}/>
+                <Route path='/find' component={Find}/>
+                <Route path='/cart' component={Cart}/>
+                <Route path='/mine' component={Mine}/>
+                <Route path='/list' component={List}/>
+                <Route path='/detail' component={Detail}/>
+                <Redirect from="/" to="/home" />
+            </Switch>
         </div>
     )
    }
