@@ -95,9 +95,9 @@ class App extends Component{
                 <Route path='/mine' component={Mine}/>
                 <Route path='/list' component={List}/>
                 <Route path='/detail' component={Detail}/>
-                <Route path='/Login' component={Login}/>
-                <Route path='/Lzhuce' component={Lzhuce}/>
-                <Route path='/Loginx' component={Loginx}/>
+                <Route path='/login' component={Login}/>
+                <Route path='/lzhuce' component={Lzhuce}/>
+                <Route path='/loginx' component={Loginx}/>
                 <Redirect from="/" to="/home" />
             </Switch>
         </div>

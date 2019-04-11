@@ -2,9 +2,9 @@
 import './Login.scss';
 
 // 引入组件
-import Lmain from '../../Components/Lmain.js';
-import Lfoot from '../../Components/Lfoot.js';
-import Llink from '../../Components/Llink.js';
+import Lmain from '../../components/Lmain.js';
+import Lfoot from '../../components/Lfoot.js'
+import Llink from '../../components/Llink.js';
 
 import React,{Component} from 'react';
 

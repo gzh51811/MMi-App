@@ -8,8 +8,8 @@ import {Icon} from 'antd';
 import {withRouter} from 'react-router'
 
 // 引入各个组件
-import HTabs from '../../Components/HTabs';
-import HTotop from '../../Components/HTotop';
+import HTabs from '../../components/HTabs';
+import HTotop from '../../components/HTotop';
 
 class Home extends Component{
     constructor(){

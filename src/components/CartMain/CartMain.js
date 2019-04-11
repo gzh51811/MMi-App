@@ -22,7 +22,7 @@ class CartMain extends Component {
     }
     //初始化渲染
     async componentDidMount() {
-        let username = "duan";
+        let username = localStorage.getItem('username')
         let { data } = await this.props.axios.get('/cart', {
             params: {
                 username: username
