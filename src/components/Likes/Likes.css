@@ -1,0 +1,46 @@
+.likesimg{
+    width: 100%;
+    height: 1.666667rem;
+}
+.likesimg img{
+    display: block;
+    height: 100%;
+    width:100%;
+}
+.likesul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.likesul li{
+    width: 49%;
+    height: 6.524267rem;
+}
+.likesliimg{
+    width: 4.950133rem;
+    height: 4.950133rem;
+}
+.likesliimg img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.likeswords{
+    font-size: .373333rem;
+    color: #999;
+    padding-left: .533333rem;
+    padding-top: .133333rem;
+}
+.likespri{
+    font-size: .373333rem;
+    color: orangered;
+    padding-left: .533333rem;
+    padding-top: .133333rem;
+    font-weight: bolder;
+}
+.likesdis{
+    display: inline-block;
+    color: #ccc;
+    padding-left: .133333rem;
+}

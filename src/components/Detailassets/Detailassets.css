@@ -1,0 +1,121 @@
+.Detailassets{
+    width: 100%;
+    height: auto;
+}
+.DetailassetsUl{
+    display: flex;
+    justify-content: space-around;
+}
+.Detailassets ul li{
+    width: 25%;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-left: .026667rem solid #f2f2f2;
+    list-style:none;
+}
+.greybac{
+    width: 90%;
+    background: #f2f2f2;
+    margin:auto;
+    height: auto;
+    border-radius: 5%;
+    border:.026667rem solid #ccc;
+    box-sizing: border-box;
+}
+.greybac p{
+    width: 100%;
+    height: 1.066667rem;
+    border-bottom:.026667rem solid #ccc;
+    line-height: 1.066667rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+.dselected{
+    display: inline-block;
+    margin-left: .133333rem;
+    width: 10%
+}
+.ddec{
+    display: inline-block;
+    width: 80%
+}
+.dicon{
+    display: inline-block;
+    width: 10%;
+}
+.dselected1{
+    display: inline-block;
+    margin-left: .133333rem;
+    width: 20%
+}
+.ddec1{
+    display: inline-block;
+    width: 20%
+}
+.dicon1{
+    display: inline-block;
+    width: 50%;
+}
+.dicon2{
+    display: inline-block;
+    width: 10%;
+}
+.greybacp{
+    border-bottom:0px solid #ccc;
+}
+.discuss{
+    width: 90%;
+    background: #f2f2f2;
+    margin:auto;
+    height: auto;
+    border-radius: 5%;
+    border:.026667rem solid #ccc;
+    box-sizing: border-box;
+    margin-top: .533333rem;
+}
+.discussTop{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .533333rem;
+    margin-left: .133333rem;
+    margin-right: .133333rem;
+}
+.discussTop img{
+    display: block;
+    width: .8rem;
+    height: .8rem;
+    border-radius:50%;
+}
+.discusstitle{
+    width: 75%;
+    margin-top: .066667rem;
+    list-style:none;
+}
+.discusslike{
+    margin-top: .066667rem;
+    list-style:none;
+}
+.discussimg{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.discussimg img{
+    display:block;
+    width: 2.266667rem;
+    height: 1.733333rem;
+    border-radius: 5%;
+    margin-left:10px;
+}
+.discussmore{
+    width: 90%;
+    margin: auto;
+    margin-top: 1.333333rem;
+    text-align: center;
+    font-size: .48rem;
+    color: blue;
+}

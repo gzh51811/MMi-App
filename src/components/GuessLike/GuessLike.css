@@ -1,0 +1,18 @@
+.GuessLike{
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+.GuessLike h2{
+    margin-top: .533333rem;
+    font-size: .8rem;
+}
+.GuessLikeul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.GuessLikeul li{
+    width: 49%;
+    height: 6.524267rem;
+}

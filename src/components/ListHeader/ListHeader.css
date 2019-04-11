@@ -1,0 +1,27 @@
+.header{
+    width: 100%;
+    height: 1.333333rem;
+    background: #f2f2f2;
+    color: #666;
+    padding: 0px; 
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerli{
+    height: 1.333333rem;
+    line-height: 1.333333rem;
+    list-style: none;
+}
+.left{
+    padding-left: .266667rem;
+}
+.words{
+    text-align: center;
+    font-size: .426667rem;
+}
+.search{
+    text-align: right;
+    padding-right: .266667rem;
+}
