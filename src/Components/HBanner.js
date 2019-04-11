@@ -21,20 +21,16 @@ class HBanner extends Component{
                     'https://i8.mifile.cn/v1/a1/b6f670fb-688c-0ce3-6aed-03674b4260e4!720x360.webp'
                 ],
                 bijiben:[
-                    'https://i8.mifile.cn/v1/a1/909a8119-dc2e-7574-fbec-da3eae8a1cb9!720x505.webp'
+                    'https://i8.mifile.cn/v1/a1/ed7c61c4-bb44-8872-f0d7-06cce0135ea8!720x500.webp'
                 ],
                 zhineng:[
-                    'https://i8.mifile.cn/v1/a1/c3ed6d1c-d811-b4f1-8dee-6f58445879f9!720x360.webp',
-                    'https://i8.mifile.cn/v1/a1/9b5ea1bb-7746-6b54-3e59-10c0ab12aaf1!720x360.webp',
-                    'https://i8.mifile.cn/v1/a1/a8e92a59-0992-5929-7edd-d424bfb22240!720x360.webp'
+                    'https://i8.mifile.cn/v1/a1/8d5a3e4e-ef20-a2ad-f440-e26023ef4b18!720x517.webp'
                 ],
                 dianshi:[
                     'https://i8.mifile.cn/v1/a1/08047fde-ea8e-dcc4-f7a7-c2cdbc4d369b!720x466.webp'
                 ],
                 jiadian:[
-                    'https://i8.mifile.cn/v1/a1/20b76697-875e-ae6f-2c4d-dc65c985207a!720x360.webp',
-                    'https://i8.mifile.cn/v1/a1/25d2090a-79a3-3c33-dec4-3568019eaefd!720x360.webp',
-                    'https://i8.mifile.cn/v1/a1/1cc5d1b8-74c3-b5b0-864c-3d777f22c3a3!720x360.webp'
+                    'https://i8.mifile.cn/v1/a1/a4635880-51ae-c058-57d2-dedec2f872b6!720x487.webp'
                 ],
                 zhoubian:[
                     'https://i8.mifile.cn/v1/a1/4c410b0c-968e-d1da-3410-0c6cc25f4ba3!720x360.webp',
@@ -48,6 +44,7 @@ class HBanner extends Component{
     render(){
         let state = this.state;
         let style = this.props.data;
+        let arrx = ['dianshi','bijiben','zhineng','jiadian'];
         
         return(
             <div style={{'marginTop':'1.186rem'}}>
@@ -56,7 +53,7 @@ class HBanner extends Component{
                         state[style].map((item,idx)=>
                             <div style={{'width':'100%', 'height':'auto'}} key={idx}>
                                {
-                                    ['dianshi','bijiben'].indexOf(style) === -1 ? 
+                                    arrx.indexOf(style) === -1 ? 
                                     <img src={item} alt="" style={{'height': '5rem', 'width':'100%'}} key={idx}/>
                                     :
                                     <img src={item} alt="" style={{'height': '6.666667rem', 'width':'100%'}} key={idx}/>

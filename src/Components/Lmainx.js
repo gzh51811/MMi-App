@@ -4,8 +4,9 @@ import './CSS/Lmainx.scss';
 
 import React,{Component} from 'react';
 import {withRouter} from 'react-router';
+import withAxios from '../hoc/withAxios';
 
-import { Button, Icon } from 'antd';
+import { Button, Icon, message } from 'antd';
 
 class Lmainx extends Component {
     constructor(){
@@ -29,10 +30,31 @@ class Lmainx extends Component {
         history.push('/lzhuce');
     }
 
-    componentDidMount(){
-        let userx = document.querySelector('#userx').value;
-        let passwx = document.querySelector('#passwx').value;
+    // 点击登录
+    async Loginx(){
+        let {axios, history} = this.props;
+        let Userx = this.refs.userx.value;
+        let Upasswx = this.refs.passwx.value;
 
+        if(Userx && Upasswx){
+            let {data} = await axios.post('/loginUser',{
+                uname : Userx,
+                password : Upasswx
+            })
+           
+            // 如果返回成功则跳转至首页
+            if(data.status === 'success'){
+                history.push('/home');
+                localStorage.setItem('username',Userx);
+                localStorage.setItem('token',data.token);
+            }else if(data.status === 'fail'){
+                message.error('您输入的密码有误，请重新输入');
+                this.refs.passwx.value = '';
+            }
+
+        }else{
+            message.error('请输入您的用户名或密码');
+        }
     }
 
 
@@ -40,10 +62,10 @@ class Lmainx extends Component {
         return (
             <div id="Lmainx">
                 <div className="yanzh1">
-                    <input id="userx" placeholder="邮箱/手机号码/小米ID"/>
+                    <input ref="userx" placeholder="邮箱/手机号码/小米ID"/>
                 </div>
                 <div className="yanzh2">
-                    <input id="passwx" type="password" placeholder="密码"/>
+                    <input ref="passwx" type="password" placeholder="密码"/>
                     <span><Icon type="eye" theme="filled" style={{'fontSize':'18px'}}/></span>
                 </div>
                 <div className="btn1" onClick={this.Loginx}>
@@ -62,5 +84,6 @@ class Lmainx extends Component {
 }
 
 Lmainx = withRouter(Lmainx);
+Lmainx = withAxios(Lmainx);
 
 export default Lmainx;

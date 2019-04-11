@@ -22,13 +22,23 @@ class Home extends Component{
     }
 
     componentDidMount(){
-        // 点击回到顶部
-        window.addEventListener('scroll', this.handleScroll);
+        // 监听滚轮事件
+        window.onscroll = function(){
+            var Tscroll = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+            
+            // 回到顶部
+            var sTop = this.refs.toTop;
+            if(sTop){
+                if(Tscroll > 500){
+                    sTop.style.opacity = 1;
+                }else{
+                    sTop.style.opacity = 0;
+                }
+            }
+        }
+        
     }
 
-    handleScroll(){
-        console.log(window.scrollY);
-    }
 
     // 点击跳转到我的
     GoMine(){
@@ -46,7 +56,7 @@ class Home extends Component{
                 </div>
 
                 <div className="Home2">
-                    <HTabs/>
+                    <HTabs ref="toTop"/>
                     <HTotop/>
                 </div>
             </div>

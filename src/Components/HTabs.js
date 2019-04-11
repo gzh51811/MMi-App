@@ -74,7 +74,7 @@ class HTabs extends Component {
                         
                             <TabPane className="TabPane" tab={item.tab} key={idx}>
                                     <HBanner data={item.style}/>
-                                    <HNavs data={item.style}/>
+                                    <HNavs data={item.style} data1={item.type}/>
                                     <HLans data={item.style}/>
                             {
                                 arr.indexOf(item.style) === -1 ?

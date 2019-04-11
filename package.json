@@ -8,6 +8,7 @@
     "axios": "^0.18.0",
     "babel-plugin-import": "^1.11.0",
     "bee-mobile": "^0.4.3",
+    "jsonwebtoken": "^8.5.1",
     "node-sass": "^4.11.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
