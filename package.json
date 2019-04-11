@@ -4,8 +4,8 @@
   "private": true,
   "dependencies": {
     "antd": "^3.16.1",
-    "axios": "^0.18.0",
     "antd-mobile": "^2.2.11",
+    "axios": "^0.18.0",
     "babel-plugin-import": "^1.11.0",
     "bee-mobile": "^0.4.3",
     "jsonwebtoken": "^8.5.1",
@@ -30,14 +30,15 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "babel":{
-    "presets":[
+  "babel": {
+    "presets": [
       "react-app"
     ],
-    "plugins":[
-      "import",{
-        "libraryName":"antd",
-        "style":"css"
+    "plugins": [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": "css"
       }
     ]
   }

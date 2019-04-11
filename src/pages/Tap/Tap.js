@@ -4,7 +4,7 @@ import './Tap.scss';
 import React,{Component} from 'react';
 
 // 引入组件
-import Ttaps from '../../Components/Ttaps';
+import Ttaps from '../../components/Ttaps.js';
 
 import {Icon} from 'antd';
 

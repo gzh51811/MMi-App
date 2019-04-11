@@ -35,26 +35,34 @@ class DetailTop extends Component {
     }
     //加入购物车
     async addtoCart(){
-        let username = "duan";
-        console.log(this.state.details[0],username)
-        let {axios} = this.props;
-        let {item_id,imgurl,name,qty} = this.state.details[0];
-        let {price} = this.state.details[0].taocan[0];
-        console.log(item_id,imgurl, username,name,qty,price)
-       await axios.get('/addCart',{
-           params:{
-            item_id: item_id,
-            username:username,
-            item_url:imgurl,
-            item_name:name,
-            item_price:price,
-            item_qty:qty
-           }
-       }).then(res=>{
-        if(res===1){
-            alert('成功加入购物车')
-           }
-       })
+        if(localStorage.getItem('username')){
+            let username = localStorage.getItem('username')
+            console.log((localStorage.getItem('username')))
+            console.log(this.state.details[0],username)
+            let {axios} = this.props;
+            let {item_id,imgurl,name,qty} = this.state.details[0];
+            let {price} = this.state.details[0].taocan[0];
+            console.log(item_id,imgurl, username,name,qty,price)
+           await axios.get('/addCart',{
+               params:{
+                item_id: item_id,
+                username:username,
+                item_url:imgurl,
+                item_name:name,
+                item_price:price,
+                item_qty:qty
+               }
+           }).then(res=>{
+               console.log(res.data.status)
+            if(res.data.status===1){
+                alert('成功加入购物车')
+               }
+           })
+        }else{
+            alert("请先登录")
+            this.props.history.push('/login')
+        }
+       
       
       
     }

@@ -5,8 +5,8 @@ import './Lzhuce.scss';
 import React,{Component} from 'react';
 
 // 引入组件
-import ZCmain from '../../Components/ZCmain.js';
-import Lfoot from '../../Components/Lfoot.js';
+import ZCmain from '../../components/ZCmain.js';
+import Lfoot from '../../components/Lfoot';
 
 class Lzhuce extends Component {
     constructor(){

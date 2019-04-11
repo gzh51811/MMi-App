@@ -1,7 +1,7 @@
 import React from 'react';
-import TopList from '../../Components/TopList/TopList';
-import Likes from '../../Components/Likes/Likes';
-import ListHeader from '../../Components/ListHeader/ListHeader';
+import TopList from '../../components/TopList/TopList.js';
+import Likes from '../../components/Likes/Likes.js';
+import ListHeader from '../../components/ListHeader/ListHeader.js';
 
 function List(){
     return(

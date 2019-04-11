@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "./TopList.css";
 import withAxios from '../../hoc/withAxios';
 import {withRouter} from "react-router-dom";
+import url from 'url';
 
 class TopList extends Component {
     constructor() {
@@ -13,10 +14,11 @@ class TopList extends Component {
         this.gotoGoods = this.gotoGoods.bind(this);
     }
     async componentDidMount() {
-        //if (this.$route.query.path == "/home" || this.$route.query.path == "/tap") 
+        let{location} = this.props;
+        let {query} = url.parse(location.search,true)
         let { data } = await this.props.axios.get('/findType', {
             params: {
-                type: 'pc'//this.$route.query.type
+                type: query.type//this.$route.query.type
             }
         })
         // console.log(data);
