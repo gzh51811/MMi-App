@@ -22,15 +22,22 @@ class CartMain extends Component {
     }
     //初始化渲染
     async componentDidMount() {
-        let username = localStorage.getItem('username')
-        let { data } = await this.props.axios.get('/cart', {
-            params: {
-                username: username
-            }
-        })
-        this.setState({
-            cartlist: data
-        });
+        // console.log((localStorage.getItem('username')))
+        if(localStorage.getItem('username')){
+            let username = localStorage.getItem('username')
+            let { data } = await this.props.axios.get('/cart', {
+                params: {
+                    username: username
+                }
+            })
+            this.setState({
+                cartlist: data
+            });
+        }else{
+            alert('请先登录')
+            this.props.history.push('/login')
+        }
+       
     }
     gotoBack() {
         this.props.history.goBack();
